@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+</head>
+<body>
+
+<div class="container">
+  <div class="newsletter">
+      
+  <div class="col-1">
+
+
+  </div>
+
+
+  <div class="col-2">
+
+    <h1 class="title">
+      Stay updated!
+    </h1>
+    <p class="details">
+      Join 60,000+ product managers receiving monthly updates on:
+    </p>
+
+    <div class="update-container">
+      <div class="update">
+        <img src="assets/images/icon-list.svg" alt="" class="check-mark">
+        <p class="update-text">Product discovery and building what matters</p>
+      </div>
+
+      <div class="update">
+        <img src="assets/images/icon-list.svg" alt="" class="check-mark">
+        <p class="update-text">Measuring to ensure updates are a success</p>
+      </div>
+
+      <div class="update">
+        <img src="assets/images/icon-list.svg" alt="" class="check-mark">
+        <p class="update-text">And much more!</p>
+      </div>
+    </div>
+
+    <form>
+      <div class="label">
+        <div class="email-header">Email address</div>
+        <div class="errorMessage"></div>
+      </div>
+
+      <input type="email" class="input" placeholder="email@company.com">
+      <button class="submitBtn btn">Subscribe to monthly newsletter</button>
+
+    </form>
+
+  </div>
+
+  </div>
+
+  <!-- ================MOBILE SUCCESS=================== -->
+  <div class="success-container hide">
+
+    <div class="success ">
+
+      <img src="assets/images/icon-success.svg" alt="">
+      <h1 class="title">
+        Thanks for subscribing!
+      </h1>
+  
+      <p class="details">
+        A confirmation email has been sent to <a href="#" class="verify"></a>  
+        Please open it and click the button inside to confirm your subscription.
+      </p>
+  
+      <button class="dismissBtn btn">Dismiss message</button>
+  
+    </div>
+  </div>
+  
+</div>
+  
+<script src="script.js"></script>
+</body>
+</html>

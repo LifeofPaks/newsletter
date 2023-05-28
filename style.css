@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --Tomato: hsl(4, 100%, 67%);
+    --Dark-Slate-Grey: hsl(234, 29%, 20%);
+    --Charcoal-Grey: hsl(235, 18%, 26%);
+    --Grey: hsl(231, 7%, 60%);
+    --White: hsl(0, 0%, 100%)
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.success-container.hide, .newsletter.hide{
+    display: none;
+}
+
+.container{
+    width: 769px;
+}
+
+.newsletter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.col-1{
+    width: 100%;
+    min-height: 30vh;
+    background-image: url(assets/images/illustration-sign-up-mobile.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.col-2{
+    padding-inline: 30px;
+    color: var(--Charcoal-Grey);
+}
+
+.col-2 p{
+    font-size: 1.2rem;
+}
+.title{
+    font-size: 2.7rem;
+    margin-bottom: 25px;
+}
+
+.details{
+    margin-bottom: 25px;
+}
+
+.update{
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+.label{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.email-header{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.errorMessage{
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--Tomato);
+}
+
+.update-container{
+    margin-bottom: 50px;
+}
+
+.input{
+    outline: 0;
+    border: 1px solid var(--Grey);
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 16px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.input:focus{
+    border: 1px solid var(--Dark-Slate-Grey);
+}
+
+.input.error{
+    border: 1px solid var(--Tomato);
+    color: var(--Tomato);
+    background: rgba(241, 200, 192, 0.345);
+}
+
+
+.btn{
+    padding: 20px;
+    font-size: 16px;
+    border: 0;
+    outline: 0;
+    background: var(--Charcoal-Grey);
+    color: var(--White);
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover{
+    background: var(--Tomato);
+    box-shadow: 0 10px 20px var(--Tomato);
+}
+
+
+/* ================MOBILE SUCCESS===================== */
+
+.success{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-inline: 30px;
+    color: var(--Charcoal-Grey);
+    min-height: 100vh;
+}
+
+
+.success img{
+    width: 70px;
+    margin-bottom: 2rem;
+    margin-top: 8rem;
+}
+
+.details a{
+    color: inherit;
+    font-weight: bold;
+}
+
+.success .details{
+    line-height: 2;
+}
+
+.dismissBtn{
+    margin-top: 10rem;
+}
+
+
+/* =====================MEDIA QUERY FOR LARGER SCREEN================= */
+@media (min-width: 770px) {
+    
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        background: var(--Charcoal-Grey);
+    }
+    .container{
+        width: 950px;
+        padding: 20px;
+        background: var(--White);
+        border-radius: 30px;
+    }
+
+    .newsletter{
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    .newsletter.hide{
+        display: none;
+    }
+
+    .col-1{
+        background-image: url(assets/images/illustration-sign-up-desktop.svg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 600px;
+        width: 500px;
+        border-radius: 15px;
+    }
+
+    .col-2{
+        width: 600px;
+
+    }
+
+    .success-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .success{
+       width: 100%;
+       min-height: 60%;
+       justify-content: center;;
+    }
+
+    .success img{
+        width: 100px;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+    }
+    
+    .success .title{
+        font-size: 5rem;
+    }
+    
+    .success .details{
+        line-height: 1.3;
+        font-size: 1.5rem;
+    }
+    
+    .dismissBtn{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        font-size: 1.5rem;
+
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
